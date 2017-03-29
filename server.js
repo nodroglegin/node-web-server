@@ -12,9 +12,9 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 
 // stops all app.get handlers working because we don't call next()
-app.use( (req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use( (req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 app.use((req, res, next ) => {
     var now = new Date().toString();
